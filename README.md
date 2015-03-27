@@ -78,6 +78,8 @@ I will gladly accept pull requests for fixes and feature enhancements but please
     limitations under the License.
 
 ## How to make aar
+Reference is http://qiita.com/kgmyshin/items/87f560172c31c2fbd899
+
 ```
 $ cd library
 $ ./gradlew assembleRelease
