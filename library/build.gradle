@@ -46,3 +46,16 @@ buildscript {
     }
 }
 
+def repo = new File(rootDir, "repository")
+apply plugin: 'maven'
+uploadArchives {
+    repositories {
+        mavenDeployer {
+            repository url: "file://${repo.absolutePath}"
+            pom.version = '1.0.0'             // version
+            pom.groupId = 'com.beatrobo'    // グループ名
+            pom.artifactId = 'Android-PullToRefresh' // ライブラリ名
+        }
+    }
+}
+
