@@ -28,9 +28,10 @@ proguard.cfg
 .DS_Store
 
 #Gradle
-build
-
-#Gradle
-#build
+library/build/*
+!library/build/outputs
+library/build/outputs/*
+!library/build/outputs/aar
 .gradle
 local.properties
+
